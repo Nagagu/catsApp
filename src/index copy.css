@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #d8d7d8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* .heroCat {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(fondomitad.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+} */
+.heroCat {
+  background-image: url(fondomitadnew.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f0e1f0;
+  background-position: center;
+}
+
+.header {
+  text-align: center;
+  padding-top: 6vh;
+}
+.title {
+  margin-left: 5vw;
+}
+.title h1 {
+  font-family: "Frijole", cursive;
+  font-size: 6vw;
+  color: #31014e;
+}
+.cat-siluet {
+  background-image: url(siluetacatdarkpurple.png);
+  background-size: contain;
+  width: 21vw;
+  height: 14vh;
+  background-repeat: no-repeat;
+  margin-left: 36vw;
+  /* height: 14vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -14vh;
+  margin-left: 36vw; */
+}
+
+.title-question {
+  font-family: "Indie Flower", cursive;
+}
+.container-game {
+  /* position: absolute;
+  left: 35vw;
+  top: 22vh; */
+}
+.startGame-btn {
+  background-color: #b4aee8;
+  width: 14vw;
+  font-size: 40px;
+  margin-left: 48.3vw;
+  border-radius: 35px;
+  margin-top: 5vh;
+  border: solid 1px;
+  border-color: #f0f0e1;
+  color: #450b67;
+  letter-spacing: 8px;
+  font-family: fantasy;
+  filter: drop-shadow(20px 8px 6px rgb(0 0 0 / 40%));
+}
+
+.game-container {
+  width: 60vw;
+  height: 29vw;
+  margin-left: 20vw;
+  background-color: rgb(50 2 79 / 21%);
+  border-radius: 30px;
+  filter: drop-shadow(20px 8px 6px rgb(0 0 0 / 40%));
+}
+
+.game-container img {
+  border-radius: 8px;
+  margin-left: 3vw;
+}
+.image-card {
+  width: 35%;
+}
+.image-card img {
+  /* width: 100%;
+  max-width: 100vw;
+  height: auto; */
+  max-height: 33vh;
+  width: auto;
+  max-width: 23vw;
+}
+.form-container {
+  margin-left: 34vw;
+  margin-top: -13vw;
+  /* margin-top: 6vh; */
+}
+
+.form-container button {
+  padding: 1%;
+  display: list-item;
+  margin: 1vw;
+  width: 20vw;
+  font-size: 2vw;
+}
+.numeroPregunta {
+  background-color: bisque;
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+}
+.form-options {
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+}
+.form-options:hover {
+  background-color: rgb(212, 219, 219);
+}
+.form-container {
+  padding-bottom: 15px;
+}
+.option-input {
+  margin-left: 8px;
+}
+.correcto {
+  background-color: rgb(124, 226, 21);
+}
+.incorrecto {
+  background-color: rgb(228, 121, 142);
+}
+.optionName {
+  display: inline-block;
+  width: 16%;
+  margin-right: 10px;
+  border-radius: 15px;
+  border: solid 1px rgb(64, 117, 117);
+}
+.optionName:not(:focus):hover {
+  background-color: cadetblue;
+  border: solid 1px rgb(64, 117, 117);
+}
+
+@media only screen and (min-width: 600px) {
+}
