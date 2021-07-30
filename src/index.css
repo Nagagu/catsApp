@@ -112,7 +112,7 @@ code {
   margin-top: 2vh;
 }
 
-.option-box {
+/* .option-box {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -123,6 +123,17 @@ code {
   border: 0;
   background-color: #32024f;
   color: #f0e1f0;
+} */
+
+.option-box {
+  width: 60vw;
+  margin-top: 1vh;
+  align-items: center;
+  border-radius: 15px;
+  border: 0;
+  background-color: #32024f;
+  color: #f0e1f0;
+  padding: 1%;
 }
 
 .form-options {
