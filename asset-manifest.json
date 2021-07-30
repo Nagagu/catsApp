@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/catsApp/static/css/main.35bf21af.chunk.css",
-    "main.js": "/catsApp/static/js/main.14a3da19.chunk.js",
-    "main.js.map": "/catsApp/static/js/main.14a3da19.chunk.js.map",
+    "main.css": "/catsApp/static/css/main.a79f96f8.chunk.css",
+    "main.js": "/catsApp/static/js/main.4bba31f3.chunk.js",
+    "main.js.map": "/catsApp/static/js/main.4bba31f3.chunk.js.map",
     "runtime-main.js": "/catsApp/static/js/runtime-main.351e73bc.js",
     "runtime-main.js.map": "/catsApp/static/js/runtime-main.351e73bc.js.map",
     "static/js/2.7d2d6154.chunk.js": "/catsApp/static/js/2.7d2d6154.chunk.js",
     "static/js/2.7d2d6154.chunk.js.map": "/catsApp/static/js/2.7d2d6154.chunk.js.map",
     "index.html": "/catsApp/index.html",
-    "static/css/main.35bf21af.chunk.css.map": "/catsApp/static/css/main.35bf21af.chunk.css.map",
+    "static/css/main.a79f96f8.chunk.css.map": "/catsApp/static/css/main.a79f96f8.chunk.css.map",
     "static/js/2.7d2d6154.chunk.js.LICENSE.txt": "/catsApp/static/js/2.7d2d6154.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.351e73bc.js",
     "static/js/2.7d2d6154.chunk.js",
-    "static/css/main.35bf21af.chunk.css",
-    "static/js/main.14a3da19.chunk.js"
+    "static/css/main.a79f96f8.chunk.css",
+    "static/js/main.4bba31f3.chunk.js"
   ]
 }
