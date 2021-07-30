@@ -7,13 +7,20 @@ export const CatGameScreen = () => {
   const { startedGame } = useSelector((state) => state.game);
 
   return (
-    <div className="animate__animated animate__fadeIn">
+    <div className="heroCat animate__animated animate__fadeIn">
+      {/* <div className="container-game"> */}{" "}
       <div className="header ">
-        <h1>Quiz Cat Game</h1>
-        <h3>¿Cuánto sabes de gatos?</h3>
+        <div className="cat-image-container">
+          <div className="cat-image"></div>
+        </div>
+        <div className="title">
+          <h1>Cat Quiz</h1>
+        </div>
+        <div className="title-question">
+          {" "}
+          <h3>How much do you know about cats?</h3>
+        </div>
       </div>
-
-      <hr />
       {startedGame ? <CatGame /> : <StartGame />}
     </div>
   );

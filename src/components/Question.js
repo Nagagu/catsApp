@@ -25,49 +25,51 @@ export const Question = () => {
         <PantallaResultados />
       )}
 
-      {counter}
-
-      <div className="container">
-        <div className="numeroPregunta">
+      <div className="game-container">
+        <div className="question-number">
           {" "}
-          <h1>{counter}.</h1>
+          <span className="contador">
+            {counter} of {totalQuestions}
+          </span>
         </div>
-        {quizObject && (
-          <>
-            <div className="imagen">
-              <img
-                src={
-                  quizObject.correctAnswer.url != null &&
-                  quizObject.correctAnswer.url != null
-                    ? quizObject.correctAnswer.url
-                    : ""
-                }
-                width="200px"
-              ></img>
-            </div>
-            <div className="form-container">
-              {quizObject.quizOptions.map((o) => (
-                <button
-                  id={o.id}
-                  className={
-                    "optionName " +
-                    ((idUserAnswer !== null &&
-                      o.id === idCorrectAnswer &&
-                      "correcto") ||
-                      (idUserAnswer !== null &&
-                        o.id !== idCorrectAnswer &&
-                        "incorrecto"))
+        <div className="image-questions">
+          {quizObject && (
+            <>
+              <div className="image-card">
+                <img
+                  src={
+                    quizObject.correctAnswer.url != null &&
+                    quizObject.correctAnswer.url != null
+                      ? quizObject.correctAnswer.url
+                      : ""
                   }
-                  key={o.id}
-                  onClick={handleOptionAnswered}
-                >
-                  {" "}
-                  {o.catName}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
+                  width="200px"
+                ></img>
+              </div>
+              <div className="form-container">
+                {quizObject.quizOptions.map((o) => (
+                  <button
+                    id={o.id}
+                    className={
+                      "option-box " +
+                      ((idUserAnswer !== null &&
+                        o.id === idCorrectAnswer &&
+                        "correcto") ||
+                        (idUserAnswer !== null &&
+                          o.id !== idCorrectAnswer &&
+                          "incorrecto"))
+                    }
+                    key={o.id}
+                    onClick={handleOptionAnswered}
+                  >
+                    {" "}
+                    {o.catName}
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

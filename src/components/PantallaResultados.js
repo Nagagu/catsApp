@@ -25,6 +25,7 @@ export const PantallaResultados = () => {
     Swal.fire({
       imageUrl: image,
       imageAlt: "Custom image",
+      customClass: "swal-style",
       text: "Score: " + correctAnswersCount + "/" + totalQuestions,
       width: 600,
       padding: "3em",

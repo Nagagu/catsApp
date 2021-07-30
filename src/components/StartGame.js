@@ -23,10 +23,8 @@ export const StartGame = () => {
   // };
 
   return (
-    <div>
-      <button className="startGame-btn" onClick={handleStartGame}>
-        Iniciar
-      </button>
+    <div className="startGame-btn">
+      <button onClick={handleStartGame}>START</button>
     </div>
   );
 };

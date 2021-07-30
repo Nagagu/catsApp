@@ -7,7 +7,7 @@ const initialState = {
   counter: 1,
   startedGame: false,
   correctAnswersCount: 0,
-  totalQuestions: 3,
+  totalQuestions: 10,
 };
 
 export const gameReducer = (state = initialState, action) => {
