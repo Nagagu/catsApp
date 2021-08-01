@@ -12,5 +12,14 @@ function App() {
     </Provider>
   );
 }
+var swLocation = "./sw.js";
+if (navigator.serviceWorker) {
+  var url = window.location.href;
+
+  if (url.includes("localhost")) {
+    swLocation = "./catsApp/sw.js";
+  }
+  navigator.serviceWorker.register(swLocation);
+}
 
 export default App;
