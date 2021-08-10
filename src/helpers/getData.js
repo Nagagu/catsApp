@@ -15,13 +15,13 @@
 
 //   return gifs;
 // };
+function getRandomCats(lista, numElementos) {
+  return [...lista]
+    .sort(() => (Math.random() > 0.5 ? 1 : -1))
+    .slice(0, numElementos);
+}
 
 export const getCats = async () => {
-  function getRandomCats(lista, numElementos) {
-    return [...lista]
-      .sort(() => (Math.random() > 0.5 ? 1 : -1))
-      .slice(0, numElementos);
-  }
   const url = "https://api.thecatapi.com/v1/breeds";
   const resp = await fetch(url);
   const data = await resp.json();

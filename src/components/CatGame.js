@@ -8,7 +8,7 @@ import { Question } from "./Question";
 
 export const CatGame = () => {
   const dispatch = useDispatch();
-  const { counter } = useSelector((state) => state.game);
+  const { counter, quizObject } = useSelector((state) => state.game);
 
   useEffect(() => {
     getCats().then((quizObject) => {
@@ -16,5 +16,5 @@ export const CatGame = () => {
     });
   }, [counter]);
 
-  return <Question />;
+  return <Question quizObject={quizObject} />;
 };

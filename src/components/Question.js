@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { nextQuestion, answer } from "../actions/cambiarEstadoRespuesta";
 import { PantallaResultados } from "./PantallaResultados";
 
-export const Question = () => {
+export const Question = ({ quizObject }) => {
   const dispatch = useDispatch();
 
-  const { counter, totalQuestions, idCorrectAnswer, idUserAnswer, quizObject } =
+  const { counter, totalQuestions, idCorrectAnswer, idUserAnswer } =
     useSelector((state) => state.game);
 
   const handleOptionAnswered = (event) => {
@@ -62,7 +62,6 @@ export const Question = () => {
                     key={o.id}
                     onClick={handleOptionAnswered}
                   >
-                    {" "}
                     {o.catName}
                   </button>
                 ))}

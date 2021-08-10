@@ -63,14 +63,20 @@ code {
   font-family: "Indie Flower", cursive;
   font-size: 1.3em;
 }
+/* .startGame-btn {
+  display: flex;
+  justify-content: center;
+} */
 
 .startGame-btn button {
   background-color: #b4aee8;
   width: 41vw;
-  font-size: 27px;
-  margin-left: 43.3vw;
-  border-radius: 35px;
+  margin-left: 46vw;
   margin-top: 10vh;
+  font-size: 27px;
+
+  border-radius: 35px;
+
   border: solid 1px;
   border-color: #f0f0e1;
   color: #450b67;
@@ -111,19 +117,6 @@ code {
   text-align: -webkit-center;
   margin-top: 2vh;
 }
-
-/* .option-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 3px 18vw;
-  margin-top: 1vh;
-  align-items: center;
-  border-radius: 15px;
-  border: 0;
-  background-color: #32024f;
-  color: #f0e1f0;
-} */
 
 .option-box {
   width: 60vw;
@@ -166,8 +159,7 @@ code {
   background-color: #33035073;
   border: 0;
 }
-
-@media only screen and (min-width: 1000px) {
+/* @media only screen and (min-width: 800px) {
   .startGame-btn button {
     width: 12vw;
     font-size: 42px;
@@ -177,9 +169,23 @@ code {
     height: 38vh;
     justify-content: initial;
   }
+  .title h1 {
+    font-size: 5vw;
+  }
+} */
+@media only screen and (min-width: 800px) {
+  .startGame-btn button {
+    width: 18%;
+    font-size: 3vw;
+    margin-left: 48vw;
+  }
+  .header {
+    height: 38vh;
+    justify-content: initial;
+  }
 
   .game-container {
-    margin: 0px 50vh;
+    margin: 0px 25vw;
     width: 50vw;
     /* flex-direction: initial;
     align-items: initial; */
@@ -187,15 +193,15 @@ code {
   }
 
   .title h1 {
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .title-question h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 2vw;
   }
   .cat-image {
     height: 15vh;
-    margin-left: 34vw;
+    margin-left: 36vw;
   }
 
   .question-number {
@@ -210,14 +216,16 @@ code {
     justify-content: space-around;
     align-content: center;
     align-items: center;
+    margin-top: 3vh;
   }
   .image-card img {
     max-height: 35vh;
     max-width: 19vw;
   }
   .option-box {
-    font-size: 1.5em;
-    margin: 5vh 0px;
+    width: 17vw;
+    font-size: 1em;
+    margin: 2vh 0px;
   }
 
   .form-container {
